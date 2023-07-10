@@ -5,6 +5,7 @@ body {
     justify-content: center;
     background-color: black;
     font-family: "Segoe UI", sans-serif;
+    overflow: hidden;
 }
 
 .layout {
@@ -12,6 +13,7 @@ body {
     grid:
     "left-sidebar body right-sidebar" 100% / 1fr 2.5fr 1fr;
     gap: 8px;
+    height: 100%;
 }
 
 .left-sidebar {
@@ -56,9 +58,6 @@ body {
 
 .body {
     grid-area: body;
-    border-left: 1px solid #2f3336;
-    border-right: 1px solid #2f3336;
-    height: 100vh;
     /*background: green;*/
 }
 
@@ -186,6 +185,8 @@ html.wf-active .profile-image-figure .profile-author-title {
     color: white;
     font-weight: bold;
     padding: 13px;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
 }
 
 .user-nav {
@@ -213,6 +214,8 @@ html.wf-active .profile-image-figure .profile-author-title {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #2f3336;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
 }
 
 .body-nav .container {
@@ -234,6 +237,7 @@ html.wf-active .profile-image-figure .profile-author-title {
 .body-nav .set-active {
     color: white;
     font-weight: bold;
+    border-bottom: #0d8bd9 solid 4px;
 }
 
 /**/
@@ -276,6 +280,8 @@ html.wf-active .profile-image-figure .profile-author-title {
     color: white;
     border: 1px ;
     border-bottom: 1px solid #2f3336;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
 }
 
 .body-tweet .profile {
@@ -423,12 +429,13 @@ html.wf-active .profile-image-figure .profile-author-title {
 }
 
 .container-show-newest-tweet {
-    width: 100%;
-    height: 5vh;
+    height: 6vh;
     border-bottom: 1px solid #2f3336;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
 }
 
 .container-show-newest-tweet:hover{
@@ -455,6 +462,8 @@ html.wf-active .profile-image-figure .profile-author-title {
     margin: 0 auto;
     padding: 30px;
     border-bottom: 1px solid #2f3336;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
 }
 
 .tweet-header {
@@ -499,4 +508,59 @@ html.wf-active .profile-image-figure .profile-author-title {
 .tweet-info-counts .count {
     color: #71767B;
     padding-left: 10px;
+}
+
+.header-top {
+    position: sticky;
+}
+
+
+/**/
+.right-content-wrapper{
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #16181c;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+}
+
+.right-content-wrapper span{
+    font-size: 24px;
+}
+
+.right-content-wrapper p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.right-content-wrapper button{
+    padding: 9px 18px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    transition: background 0.2s ease;
+}
+
+.right-content-wrapper .content {
+    display: block;
+    margin-top: 15px;
+}
+
+.right-content-wrapper .top-title{
+    color: #71767b;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.right-content-wrapper .content .sub-title{
+    font-size: 16px;
 }
