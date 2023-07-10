@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+<section class="layout">
+    <div class="left-sidebar">
+
+        <div class="left-container">
+
+            <ul>
+                <li><img style="padding-left: 14px" src="assets/twitter-512.png" class="twitter-icon" alt="Twitter logo"></li>
+                <li><a href="index.html" style="font-weight: bold"><span style="padding-right: 10px" class="material-symbols-outlined">home</span> Home</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">search</span> Explore</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">notifications</span> Notification</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">mail</span> Messages</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">list_alt</span> Lists</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">bookmark</span> Bookmarks</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">verified</span> Verified</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">person</span> Profile</a></li>
+                <li><a href="index.html"><span style="padding-right: 10px" class="material-symbols-outlined">pending</span> More</a></li>
+            </ul>
+            <a href="#" class="TweetButton">Tweet</a>
+            <figure class="profile-image-figure">
+
+                <a rel="noopener" target="_blank" href="https://twitter.com/aprp_19">
+                    <img class="fir-author-image profile-clickcircle" src="https://pbs.twimg.com/profile_images/1631316094572191744/zhyqoOo__400x400.jpg" alt="David East - Author">
+                </a>
+
+                <figcaption>
+                    <div class="profile-author-title">Angga P</div>
+                    <div class="profile-username-title">@aprp_19</div>
+                </figcaption>
+
+                <span style="color: white; margin-left: 46px;margin-right: 5px" class="material-symbols-outlined">more_horiz</span>
+            </figure>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="header">
+            Home
+        </div>
+        <div class="body-nav">
+            <div class="container set-active">
+                For You
+            </div>
+            <div class="container">
+                Following
+            </div>
+        </div>
+        <div class="body-tweet">
+            <figure class="profile">
+                <a rel="noopener" target="_blank" href="https://twitter.com/aprp_19">
+                    <img class="circle" src="https://pbs.twimg.com/profile_images/1631316094572191744/zhyqoOo__400x400.jpg" alt="David East - Author">
+                </a>
+            </figure>
+
+            <div class="container">
+                <div class="dropdown" tabindex="0">
+                    <button class="dropdown-btn" aria-haspopup="menu">
+                        <span>Everyone</span>
+                        <span class="arrow"></span>
+                    </button>
+                </div>
+                <div class="input-box">
+                    <div class="tweet-area">
+                        <span class="placeholder">What is happening?!</span>
+                        <div class="input editable" contenteditable="true" spellcheck="false"></div>
+                        <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+                    </div>
+                    <div class="privacy">
+                        <span class="material-symbols-outlined">public</span> <span class="size-15">Everyone can reply</span>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <ul class="icons">
+                        <li><span class="material-symbols-outlined">image</span></li>
+                        <li><span class="material-symbols-outlined">gif_box</span></li>
+                        <li><span class="material-symbols-outlined">checklist</span></li>
+                        <li><span class="material-symbols-outlined">sentiment_satisfied</span></li>
+                        <li><span class="material-symbols-outlined">overview</span></li>
+                        <li><span class="material-symbols-outlined">location_on</span></li>
+                    </ul>
+                    <div class="content">
+                        <button>Tweet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-show-newest-tweet">
+            <span class="newest-tweet">Show 35 Tweets</span>
+        </div>
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <img src="https://pbs.twimg.com/profile_images/1631316094572191744/zhyqoOo__400x400.jpg" class="avatar" alt="profile">
+                <div class="tweet-header-info">
+                    Steve Schoger <span>@Steve Schoger</span>
+                    <span>. 10 Jul</span>
+                    <p>Selamat datang di homepage twitter</p>
+                </div>
+            </div>
+
+            <div class="tweet-info-counts">
+
+                <div class="comments">
+
+                    <svg class="feather feather-message-circle sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    <div class="comment-count">33</div>
+                </div>
+
+                <div class="retweets">
+                    <svg class="feather feather-repeat sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                    <div class="retweet-count">397</div>
+                </div>
+
+                <div class="likes">
+                    <svg class="feather feather-heart sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <div class="likes-count">
+                        2.6k
+                    </div>
+                </div>
+
+                <div class="message">
+                    <svg class="feather feather-send sc-dnqmqq jxshSx" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="search-container">
+            <form action="#" class="search-bar">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                <input type="text" placeholder="Search Twitter">
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

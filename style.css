@@ -1,0 +1,495 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.layout {
+    display: grid;
+    grid:
+    "left-sidebar body right-sidebar" 100% / 1fr 2.5fr 1fr;
+    gap: 8px;
+}
+
+.left-sidebar {
+    grid-area: left-sidebar;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+
+.left-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 64px;
+}
+
+.left-sidebar ul a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.left-sidebar ul a:hover {
+    border-radius: 100px;
+    transition: 0.3s;
+    background-color: #181818;
+}
+
+.left-container{
+    float: right;
+    position: relative;
+}
+
+.profile {
+    float: right;
+    bottom: 0;
+}
+
+
+.body {
+    grid-area: body;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
+    height: 100vh;
+    /*background: green;*/
+}
+
+.right-sidebar {
+    grid-area: right-sidebar;
+    /*background: red;*/
+}
+
+.twitter-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 16px;
+}
+
+.TweetButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 200px;
+    height: 40px;
+    padding: 8px 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #1d9bf0;
+}
+
+.TweetButton:hover {
+    background-color: #1a8cd8;
+}
+
+.search-bar {
+    width: 254px;
+    height: 24px;
+    background: #202327;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.search-bar button {
+    background: transparent;
+    color: #71767b;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #6e7277;
+}
+
+/**/
+.profile-clickcircle {
+    height: 46px;
+    width: 46px;
+margin-top: 6px;
+margin-left: 6px;
+    margin-bottom: 1px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.profile-image-figure {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.profile-image-figure:hover {
+    color: #ffffff;
+    border-radius: 100px;
+    transition: 0.3s;
+    background-color: #181818;
+}
+
+.profile-image-figure .caption, .profile-image-figure figcaption {
+    padding-left: 15px;
+}
+
+html.wf-active .profile-image-figure .profile-author-title {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+}
+
+.profile-image-figure .profile-author-title {
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.profile-image-figure .profile-username-title {
+    color: #71767b;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/**/
+
+.header {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 13px;
+}
+
+.user-nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.user-nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.user-nav a:hover {
+    background-color: #111;
+}
+
+/**/
+.body-nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #2f3336;
+}
+
+.body-nav .container {
+    width: 50%;
+    float: left;
+    display: block;
+    color: #6b6f74;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+}
+
+.body-nav .container:hover {
+    background-color: #181818;
+}
+
+.body-nav .set-active {
+    color: white;
+    font-weight: bold;
+}
+
+/**/
+
+/* Dropdown styles */
+
+.dropdown {
+    max-width: 13em;
+    position: relative;
+    width: 100px;
+}
+
+.dropdown-btn {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    background: black;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #38434c;
+    color: #1b91e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+}
+
+/**/
+.body-tweet {
+    display: flex;
+    color: white;
+    border: 1px ;
+    border-bottom: 1px solid #2f3336;
+}
+
+.body-tweet .profile {
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.body-tweet .profile .circle {
+    height: 46px;
+    width: 46px;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 1px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.body-tweet .container {
+    /*background: #fff;*/
+    width: 100%;
+    padding-right: 50px;
+    padding-top: 15px;
+    /*box-shadow: 0px 10px 15px rgba(0,0,0,0.1);*/
+}
+
+.body-tweet .input-box {
+    padding-top: 20px;
+    border-bottom: 1px solid #1c1e20;
+}
+.body-tweet .input-box .tweet-area{
+    position: relative;
+    height: 30px;
+    overflow-y: auto;
+}
+
+.tweet-area .placeholder{
+    position: absolute;
+    margin-top: -3px;
+    font-size: 22px;
+    color: #6a6e73;
+    pointer-events: none;
+}
+
+.tweet-area .input{
+    outline: none;
+    font-size: 17px;
+    min-height: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.tweet-area .editable{
+    position: relative;
+    z-index: 5;
+}
+.tweet-area .readonly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+    background: transparent;
+}
+
+.tweet-area .input{
+    outline: none;
+    font-size: 17px;
+    min-height: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.input-box .privacy {
+    color: #1da1f2;
+    margin: 15px 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.privacy:hover, .icons li:hover{
+    background: #031018;
+    border-radius: 100px;
+}
+
+.privacy .size-15 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .icons {
+    display: inline-flex;
+    padding-left: 0;
+}
+
+.icons li{
+    list-style: none;
+    color: #1da1f2;
+    font-size: 20px;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.2s ease;
+}
+
+.bottom .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom button{
+    padding: 9px 18px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: background 0.2s ease;
+}
+.bottom button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.bottom button:hover{
+    background: #0d8bd9;
+}
+
+.container-show-newest-tweet {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid #2f3336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-show-newest-tweet:hover{
+    background-color: #080808;
+}
+
+.container-show-newest-tweet .newest-tweet {
+    margin: auto;
+    color: #1d9bf0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.tweet-header img {
+    max-width: 100%;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 48px;
+    margin-right: 15px;
+}
+
+.tweet-container {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 30px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.tweet-header-info {
+    font-weight: bold;
+    color: white;
+}
+
+.tweet-header-info span {
+    color: #71767B;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.tweet-header-info p {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.tweet-info-counts {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.tweet-info-counts div {
+    display: flex;
+    margin-right: 20px;
+}
+.tweet-info-counts div svg {
+    color:#657786;
+    margin-right: 10px;
+}
