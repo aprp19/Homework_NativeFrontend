@@ -452,7 +452,6 @@ html.wf-active .profile-image-figure .profile-author-title {
 }
 
 .tweet-container {
-    max-width: 490px;
     margin: 0 auto;
     padding: 30px;
     border-bottom: 1px solid #2f3336;
@@ -490,6 +489,14 @@ html.wf-active .profile-image-figure .profile-author-title {
     margin-right: 20px;
 }
 .tweet-info-counts div svg {
-    color:#657786;
-    margin-right: 10px;
+    color:#71767B;
+}
+
+.tweet-info-counts div span {
+    color: #71767B;
+}
+
+.tweet-info-counts .count {
+    color: #71767B;
+    padding-left: 10px;
 }
