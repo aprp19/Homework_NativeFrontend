@@ -517,7 +517,6 @@ html.wf-active .profile-image-figure .profile-author-title {
 
 /**/
 .right-content-wrapper{
-    padding: 15px;
     margin-top: 15px;
     background-color: #16181c;
     border-radius: 20px;
@@ -529,15 +528,19 @@ html.wf-active .profile-image-figure .profile-author-title {
 
 .right-content-wrapper span{
     font-size: 24px;
+    padding-left: 15px;
 }
 
 .right-content-wrapper p{
     font-size: 15px;
     margin-top: 5px;
+    padding-left: 15px;
 }
 
 .right-content-wrapper button{
     padding: 9px 18px;
+    margin-left: 15px;
+    margin-bottom: 15px;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -552,7 +555,12 @@ html.wf-active .profile-image-figure .profile-author-title {
 
 .right-content-wrapper .content {
     display: block;
-    margin-top: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.right-content-wrapper .content:hover{
+    background-color: #1d1f23;
 }
 
 .right-content-wrapper .top-title{
@@ -561,6 +569,29 @@ html.wf-active .profile-image-figure .profile-author-title {
     font-weight: normal;
 }
 
+.right-content-wrapper .content .icon{
+    display: inline-flex;
+    top: 0;
+    bottom: 0;
+    float: right;
+    padding-right: 15px
+}
+
 .right-content-wrapper .content .sub-title{
     font-size: 16px;
+}
+
+.content-more {
+    display: block;
+    padding-top: 15px;
+    width: 100%;
+}
+.right-content-wrapper .content-more .sub-title{
+    font-size: 16px;
+}
+
+.content-more:hover{
+    background-color: #1d1f23;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
